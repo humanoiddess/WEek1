@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<style>
+  body{
+    margin:0;
+  }
+    img{
+      height:150px; width:150px;
+    }
+    .icon{
+      width:30px;height: 30px;
+    }
+    nav{
+      background-color: black;
+      width:80%;
+      display: flex;
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+    nav a{
+      flex-grow: 1;
+      color:white;
+      text-decoration: none;
+      font-size: 20px;
+      border: 1px solid red;
+      text-align: center;
+    }
+    .card{
+      border:1px solid blue;
+      display: inline-block;
+      margin:50px;
+      position: relative;
+    }
+    .title{
+      position:absolute;
+      top:0; left:0;
+      background-color: blue;
+      color:white;
+      font-weight: bold;
+      width:calc(100%-30px);
+      flex-wrap: wrap;
+    }
+    .card a{
+      position:absolute;
+      top:0; right:0;
+      background-color: white;
+    }
+    .price{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    section{
+      width:60%;
+      align-self: center;
+      margin-left: 25%;
+    }
+    .alert{
+      border:3px solid red;
+      border-radius: 10px;
+      background-color: white;
+      margin-top: 10%;
+      width:30%;
+      margin-left: 35%;
+    }
+    .alert h1{
+
+      text-align: center;
+    }
+    .alert p{
+      font-size: 20px;
+      padding-left:20px;
+    }
+    .overlay {
+      background-color: rgba(0,0,0,0.6);
+      position: absolute;
+      width:100vw;
+      height: 100vh;
+      z-index: 9;
+    }
+	</style>
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div class="alert">
+        <h1>Welcome to Wheels.kz</h1>
+        <p>If you have any questions, please contact us by no: 87017023535</p>
+        <p>The best cars with the best prices are present on our website and application</p>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Prices</a>
+        <a href="#">Contacts</a>
+        <a href="#">Opportunities</a>
+      </nav>
+    </header>
+    <section>
+      <div class="card first">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X6</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Mercedes C100</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X5</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Mitsibushi Outlander</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Audi A8</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X6</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+    </section>
+  </body>
+
+</html>
