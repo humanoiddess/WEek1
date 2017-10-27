@@ -1,0 +1,183 @@
+html{
+	background: url('fon7.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+	margin:0;
+    display: flex;
+  	justify-content: center;
+}
+.container{
+	width: 70%;
+	height: 100vh;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+header{
+	position: relative;
+	background-color: #EFCDD4;
+	display: flex;
+	align-items: center;
+	padding: 1vw 2vw;
+	font-family: 'Satisfy', cursive;
+	font-size: 20px;
+
+}
+header a{
+	text-decoration: none;
+	font-size: 14px;
+}
+header div{
+	position: absolute;
+	right: 2vw;
+}
+#registr{
+	padding-left:1.3vw;
+}
+.flower{
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 100px; height: 100px;
+	position: absolute;
+	right: 20%;
+}
+.circle1, .circle2, .circle3{position: absolute;}
+.circle1 {right: 23vw;top: 2.7vh;}
+.circle2 {right: 25vw;top: 12vh;}
+.circle3 {right: 28.4vw;top: 9vh;}
+
+footer{
+  display: flex;
+  width:70%;
+  position: fixed;
+  color:#494450;
+  background-color: #EFCDD4;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  font-size: 15px;
+  align-self: flex-end;
+  bottom: 0;
+  
+}
+.contacts{
+	background-color: #EFCDD4;
+	display: flex;
+	flex-grow: 1;
+	color:#494450;
+	justify-content: center;
+	margin-bottom: 40px;
+
+}
+.contacts div{
+	width: calc(100%/3);
+	display: flex;
+	align-items: center;
+}
+.svyaz{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.newselect select {
+    background: rgba(239,205,212,0.6);
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 268px;
+}
+.newselect {
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden; 
+    background: url('arroow.png') no-repeat right rgba(239,205,212,0.8);
+    width: 240px;
+}
+.naideno img{
+	border: 4px solid white;
+	border-radius: 20px;
+}
+.naideno a{
+	font-size: 25px;
+	text-decoration: none;
+	color: #494450;
+	font-family: 'Bad Script', cursive; 
+}
+.naideno div{
+	display: flex;
+	margin: 10px;
+	color: #494450;
+	
+	}
+
+.card{
+background-color: rgba(239,205,212,0.6);
+border-radius: 20px;
+text-align: center;
+}
+button{
+	background-color: white;
+	border-radius: 5px;
+	font-size: 13px;
+}
+h2{
+	font-family: 'Bad Script', cursive;
+	color: #494450;
+}
+.poisk{
+	display: flex;
+	justify-content: space-around;
+}
+button{
+	display: block;
+	margin: auto;
+	width: 150px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	color:#494450;
+	border-radius: 20px;
+	border:2px solid #494450;
+	margin-top: 40px;
+}
+button:hover{
+	background-color: #efcdd4;
+} 
+@media screen and (max-width: 500px) {
+	.container{width: 100%;}
+	footer{width: 100%;}
+	.circle1, .circle2, .circle3, .flower, .logo img{display: none;}
+	.contacts{
+		display: flex;
+		flex-direction: column;
+	}
+	.contacts div{
+		width: 100%;
+		justify-content:  center;
+	}
+	header h1{
+		margin-left: 20px;
+	}
+	#registr{
+		padding-left: 22px;
+	}
+	.svyaz, .info p{
+		font-size: 13px;
+	}
+	footer{font-size: 13px;}
+	.cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.poisk{display: flex;flex-direction: column; align-items: center;}
+	.newselect{
+		margin: auto;
+	}
+	button{
+		width: 100px;height: 40px;font-size: 15px;
+	}
+}
